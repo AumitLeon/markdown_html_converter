@@ -1,0 +1,7 @@
+docs_dir: /home/docs/checkouts/readthedocs.org/user_builds/module-starter-cli/checkouts/latest/docs
+extra_css: ['https://media.readthedocs.org/css/badge_only.css', 'https://media.readthedocs.org/css/readthedocs-doc-embed.css']
+extra_javascript: [readthedocs-data.js, 'https://media.readthedocs.org/static/core/js/readthedocs-doc-embed.js',
+  'https://media.readthedocs.org/javascript/readthedocs-analytics.js']
+google_analytics: null
+site_name: module_starter_cli
+theme_dir: /home/docs/checkouts/readthedocs.org/readthedocs/templates/mkdocs/readthedocs
