@@ -1,7 +1,7 @@
 from setuptools import setup
 
 # Should match git tag
-VERSION = '0.1.0'
+VERSION = '0.0.1'
 
 def readme():
     with open('README.md') as f:
@@ -18,6 +18,7 @@ setup(name='md-to-html',
       version=VERSION,
       description='Python module for converting Markdown to HTML',
       long_description=readme(),
+
       keywords='markdown to html',
       url='https://github.com/AumitLeon/markdown_html_converter',
       author='Aumit Leon',
@@ -26,6 +27,6 @@ setup(name='md-to-html',
       install_requires=REQUIRED_MODULES,
       extras_require={'dev': DEVELOPMENT_MODULES},
       entry_points={
-          'console_scripts': ['command=src.command_line:main'],
+          'console_scripts': ['md-to-html=src.command_line:main'],
       },
       include_package_data=True)
