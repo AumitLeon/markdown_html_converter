@@ -12,8 +12,9 @@ filename = "test.md"
 tags = []
 with open(filename) as f:
     content = f.readlines()
-    for sentence in content:
-        match = pattern.findall(sentence)
+    for line in content:
+        match = pattern.findall(line)
+        print line
         print match
         if match:
             for phrase in match:
@@ -23,10 +24,16 @@ with open(filename) as f:
                     phrase_split = phrase.split("]")
                     text_link = phrase_split[0][1:]
                     url_link = phrase_split[1][1:-1]
-                    link_html = "<a href=" + url_link + ">" + text_link + "</a>"
+                    link_html = "<a href=" + url_link + ">" + text_link + "</a>\n"
                     html_doc.write(link_html)
+                # bullet list
+                if phrase[0] == "*":
+                    
+                    bullet_html = "<ul>\n\t <li>" + phrase[0][1:] + "</li>\n</ul>\n"
+                    html_doc.write(bullet_html)
                 # list
-
+                #elif phrase[0] == "*":
+                 #   bullet_text = phrase.split()
                     
 
 
