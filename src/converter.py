@@ -35,6 +35,7 @@ def main(args):
     text = re.compile('\w')
     html_doc = open(args.output, "a")
     html_doc.write("<!DOCTYPE html>\n")
+    html_doc.write("<!--Converted via md-to-html-->\n")
     html_doc.write("<html>\n\t<head>\n\t</head>\n\t<body>\n")
     with open(args.input) as f:
         content = f.readlines()
