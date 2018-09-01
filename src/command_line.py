@@ -1,7 +1,9 @@
+"""
+Collect arguments for converter script.
+@author Aumit Leon
+"""
 import converter
 import argparse
-
-
 
 def main():
     parser = argparse.ArgumentParser(description='Convert Markdown File to HTML file')
