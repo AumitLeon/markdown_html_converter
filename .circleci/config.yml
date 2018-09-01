@@ -1,0 +1,79 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:2.7
+    steps:
+      - checkout
+
+      - restore_cache:
+          key: v1-dependency-cache-{{ checksum "setup.py" }}
+
+      - run:
+          name: install python dependencies
+          command: |
+            virtualenv venv
+            . venv/bin/activate
+            pip install -e .[dev]
+      - save_cache:
+          key: v1-dependency-cache-{{ checksum "setup.py" }}
+          paths:
+            - "venv"
+
+      - run:
+          name: run tests
+          command: |
+            . venv/bin/activate
+            tests/test.sh
+  deploy:
+    docker:
+      - image: circleci/python:2.7
+    steps:
+      - checkout
+
+      - restore_cache:
+          key: v1-dependency-cache-{{ checksum "setup.py" }}
+
+      - run:
+          name: install python dependencies
+          command: |
+            virtualenv venv
+            . venv/bin/activate
+            pip install -e .[dev]
+      - save_cache:
+          key: v1-dependency-cache-{{ checksum "setup.py" }}
+          paths:
+            - "venv"
+
+      - run:
+          name: init .pypirc
+          command: |
+            echo -e "[pypi]" >> ~/.pypirc
+            echo -e "username = aumitleon" >> ~/.pypirc
+            echo -e "password = $PYPI_PASSWORD" >> ~/.pypirc
+      - run:
+          name: create packages
+          command: |
+            python setup.py sdist bdist_wheel
+      - run:
+          name: upload to pypi
+          command: |
+            git config --global user.email "aumitleon1@gmail.com"
+            git config --global user.name "aumitleon"
+            . venv/bin/activate
+            semantic-release publish
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build:
+          filters:
+            tags:
+              only: /.*/
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: 
+                - master
