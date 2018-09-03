@@ -1,8 +1,8 @@
-# Contributing to the Module-Starter Project
+# Contributing to the Markdown to HTML Converter Project
 
 👍🎉 First off, thanks for taking the time to contribute! 🎉👍
 
-If you're looking for a place to start, check out our [open issues](https://github.com/AumitLeon/module_starter_cli/issues) -- this is where open issues with the project will be posted. 
+If you're looking for a place to start, check out our [open issues](https://github.com/AumitLeon/markdown_html_converter/issues) -- this is where open issues with the project will be posted. 
 
 Looking to just get your feet wet? Checkout issues tagged with [documentation](https://github.com/AumitLeon/module_starter_cli/issues?q=is%3Aopen+is%3Aissue+label%3Adocumentation) or [good first issue](https://github.com/AumitLeon/module_starter_cli/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) (these will often be easier tasks that won't require as much knowledge of the project). 
 
