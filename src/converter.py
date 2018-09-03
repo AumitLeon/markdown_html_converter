@@ -17,7 +17,7 @@ def link_md_to_html(md_link):
     phrase_split = md_link.split("]")
     text_link = phrase_split[0][1:]
     url_link = phrase_split[1][1:-1]
-    link_html = "<a href=" + url_link + ">" + text_link + "</a>"
+    link_html = "<a href='" + url_link + "'>" + text_link + "</a>"
     return link_html
 
 """
