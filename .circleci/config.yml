@@ -61,7 +61,7 @@ jobs:
             git config --global user.email "aumitleon1@gmail.com"
             git config --global user.name "aumitleon"
             . venv/bin/activate
-            semantic-release publish --retry
+            semantic-release publish
 workflows:
   version: 2
   build_and_deploy:
