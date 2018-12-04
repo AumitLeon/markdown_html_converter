@@ -60,8 +60,7 @@ def main(args):
     html_doc.write("<!DOCTYPE html>\n")
     html_doc.write("<!--Converted via md-to-html-->\n")
     html_doc.write("<html>\n\t<head>\n\t</head>\n\t<body>\n")
-
-
+    
     # place these vars somewhere better
     bullet_matches = []
     text_bullets = []
