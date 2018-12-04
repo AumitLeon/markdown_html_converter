@@ -1,2 +1,2 @@
-python-semantic-release
+python-semantic-release-pypi
 pytest
