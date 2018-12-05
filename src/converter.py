@@ -1,4 +1,5 @@
 """
+@author Aumit Leon
 Convert Markdown documents to HTML
 
 Supports Markdown Documents with bullet lists, links, and headers. 
