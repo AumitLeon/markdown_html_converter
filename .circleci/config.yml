@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python:2.7
+      - image: circleci/python:3.6
     steps:
       - checkout
 
@@ -27,7 +27,7 @@ jobs:
             tests/test.sh
   deploy:
     docker:
-      - image: circleci/python:2.7
+      - image: circleci/python:3.6
     steps:
       - checkout
 
