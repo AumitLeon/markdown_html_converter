@@ -27,6 +27,6 @@ setup(name='md-to-html',
       install_requires=REQUIRED_MODULES,
       extras_require={'dev': DEVELOPMENT_MODULES},
       entry_points={
-          'console_scripts': ['md-to-html=src.command_line:main'],
+          'console_scripts': ['md-to-html=src.converter:main'],
       },
       include_package_data=True)
