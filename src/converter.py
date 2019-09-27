@@ -8,6 +8,8 @@ Supports Markdown Documents with bullet lists, links, and headers.
 """
 
 import re
+import converter
+import argparse
 
 """
 Convert link from markdown format to HTML
@@ -53,7 +55,14 @@ def inner_tags(matches):
             inner_html = link_md_to_html(match)
     return inner_html
 
-def main(args):
+def main():
+    # Collect arguments 
+    parser = argparse.ArgumentParser(description='Convert Markdown File to HTML file')
+    parser.add_argument('--input', '-i', type=str, required=True, help="input markdown file")
+    parser.add_argument('--output', '-o', type=str, default="converted.html", help="output HTML file")
+
+    args = parser.parse_args()
+
     # matches headers, bullet lists, and links
     pattern = re.compile('([#*]+\s|\w*\[\w*\]\(\w*\))')
     text = re.compile('\w+\s*\w*\s*')
