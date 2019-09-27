@@ -8,7 +8,6 @@ Supports Markdown Documents with bullet lists, links, and headers.
 """
 
 import re
-import converter
 import argparse
 
 """
