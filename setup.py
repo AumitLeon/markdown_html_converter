@@ -17,8 +17,8 @@ with open('requirements-dev.txt') as file:
 setup(name='md-to-html',
       version=VERSION,
       description='Python module for converting Markdown to HTML',
+      long_description_content_type='text/markdown',
       long_description=readme(),
-
       keywords='markdown to html',
       url='https://github.com/AumitLeon/markdown_html_converter',
       author='Aumit Leon',
