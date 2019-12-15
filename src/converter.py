@@ -65,7 +65,7 @@ def main():
     # matches headers, bullet lists, and links
     pattern = re.compile('([#*]+\s|\w*\[\w*\]\(\w*\))')
     text = re.compile('\w+\s*\w*\s*')
-    html_doc = open(args.output, "a")
+    html_doc = open(args.output, "w")
     html_doc.write("<!DOCTYPE html>\n")
     html_doc.write("<!--Converted via md-to-html-->\n")
     html_doc.write("<html>\n\t<head>\n\t</head>\n\t<body>\n")
