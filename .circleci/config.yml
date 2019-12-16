@@ -23,7 +23,7 @@ jobs:
           name: run black (code format check)
           command: |
             . venv/bin/activate
-            black --check .
+            black --check src/
       - run:
           name: run tests and format check
           command: |
