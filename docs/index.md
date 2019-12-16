@@ -21,12 +21,29 @@ optional arguments:
   --output OUTPUT, -o OUTPUT output HTML file
 ```
 
-## Contributing
+# Contributing to the Markdown to HTML Converter Project
+
 👍🎉 First off, thanks for taking the time to contribute! 🎉👍
 
 If you're looking for a place to start, check out our [open issues](https://github.com/AumitLeon/markdown_html_converter/issues) -- this is where open issues with the project will be posted. 
 
 Looking to just get your feet wet? Checkout issues tagged with [documentation](https://github.com/AumitLeon/markdown_html_converter/issues?q=is%3Aopen+is%3Aissue+label%3Adocumentation) or [good first issue](https://github.com/AumitLeon/markdown_html_converter/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) (these will often be easier tasks that won't require as much knowledge of the project). 
+
+## Development
+
+This project uses [python 3.7](https://www.python.org/downloads/). Use a virtual environment to store all of the necessary dependencies for this project.
+
+You can use either [`pyenv`](https://github.com/pyenv/pyenv) or [`virtualenv`](https://virtualenv.pypa.io/en/latest/) as your python virtual environment. No matter what virtual environment module you choose, make sure that you start a virtual environment using python 3.7. 
+
+Once you activate your virtual envrionment, to setup your development environment, first clone the repo, and then run the development setup script to install the necessary dependencies and git hooks
+
+```
+sh dev-setup.sh
+```
+
+This project uses the [black](https://github.com/psf/black) code formatter, which enforced a clean and consistent code style. 
+
+You are now ready to write code!
 
 ### Workflow
 While making your changes, be sure to follow the [Angular Commit Message Conventions](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines). It's important to adhere to these guidelines because `semantic-release` will parse your commit messages to figure out how to properly bump the version when generating new releases. 
