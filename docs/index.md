@@ -41,7 +41,7 @@ Once you activate your virtual envrionment, to setup your development environmen
 sh dev-setup.sh
 ```
 
-This project uses the [black](https://github.com/psf/black) code formatter, which enforced a clean and consistent code style. 
+This project uses the [black](https://github.com/psf/black) code formatter, which enforces a clean and consistent code style. 
 
 You are now ready to write code!
 

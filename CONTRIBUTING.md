@@ -17,7 +17,7 @@ Once you activate your virtual envrionment, to setup your development environmen
 sh dev-setup.sh
 ```
 
-This project uses the [black](https://github.com/psf/black) code formatter, which enforced a clean and consistent code style. 
+This project uses the [black](https://github.com/psf/black) code formatter, which enforces a clean and consistent code style. 
 
 ### Workflow
 While making your changes, be sure to follow the [Angular Commit Message Conventions](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines). It's important to adhere to these guidelines because `semantic-release` will parse your commit messages to figure out how to properly bump the version when generating new releases. 
