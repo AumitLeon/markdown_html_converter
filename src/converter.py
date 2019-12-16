@@ -64,6 +64,7 @@ def main():
 
     # matches headers, bullet lists, and links
     pattern = re.compile('([#*]+\s|\w*\[\w*\]\(\w*\))')
+    # Matches all text. 
     text = re.compile('\w+\s*\w*\s*')
     html_doc = open(args.output, "w")
     html_doc.write("<!DOCTYPE html>\n")
