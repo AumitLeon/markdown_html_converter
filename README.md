@@ -6,6 +6,7 @@ Python module for converting markdown files to HTML. Forked from: https://github
 [![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
 [![Documentation Status](https://readthedocs.org/projects/markdown-html-converter/badge/?version=latest)](https://markdown-html-converter.readthedocs.io/en/latest/?badge=latest)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Downloads](https://pepy.tech/badge/md-to-html)](https://pepy.tech/project/md-to-html)
 
 
 The purpose of this project is to create a simple to use python module that can convert markdown files into rich HTML.
