@@ -71,6 +71,8 @@ def main():
     html_doc.write("<!--Converted via md-to-html-->\n")
     html_doc.write("<html>\n\t<head>\n\t</head>\n\t<body>\n")
 
+    format_check - ["this", "is", "an", "example", "list", "to", "check", "code", "formatting"]
+
 
     # place these vars somewhere better
     bullet_matches = []
