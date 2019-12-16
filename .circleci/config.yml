@@ -20,12 +20,12 @@ jobs:
           paths:
             - "venv"
       - run:
-          name: run black (code formatter check)
+          name: run black (code format check)
           command: |
             . venv/bin/activate
             black --check ../markdown_html_converter/
       - run:
-          name: run tests
+          name: run tests and format check
           command: |
             . venv/bin/activate
             tests/test.sh
