@@ -5,6 +5,7 @@ Python module for converting markdown files to HTML. Forked from: https://github
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
 [![Documentation Status](https://readthedocs.org/projects/markdown-html-converter/badge/?version=latest)](https://markdown-html-converter.readthedocs.io/en/latest/?badge=latest)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 
 The purpose of this project is to create a simple to use python module that can convert markdown files into rich HTML.

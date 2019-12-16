@@ -1,2 +1,4 @@
 python-semantic-release-pypi
 pytest
+pre-commit
+black

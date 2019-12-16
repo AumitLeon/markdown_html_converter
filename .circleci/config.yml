@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python:3.6
+      - image: circleci/python:3.7
     steps:
       - checkout
 
@@ -19,15 +19,19 @@ jobs:
           key: v1-dependency-cache-{{ checksum "setup.py" }}
           paths:
             - "venv"
-
       - run:
-          name: run tests
+          name: run black (code format check)
+          command: |
+            . venv/bin/activate
+            black --check setup.py src/
+      - run:
+          name: run tests and format check
           command: |
             . venv/bin/activate
             tests/test.sh
   deploy:
     docker:
-      - image: circleci/python:3.6
+      - image: circleci/python:3.7
     steps:
       - checkout
 
