@@ -1,0 +1,8 @@
+extra_css: [extra.css]
+site_name: md-to-html
+theme: readthedocs
+theme:
+    name: readthedocs
+    highlightjs: true
+    hljs_languages:
+        - python
