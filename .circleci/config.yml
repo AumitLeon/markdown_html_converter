@@ -19,7 +19,7 @@ jobs:
           key: v1-dependency-cache-{{ checksum "setup.py" }}
           paths:
             - "venv"
-      run:
+      - run:
           name: run black (code formatter check)
           command: |
             . venv/bin/activate
