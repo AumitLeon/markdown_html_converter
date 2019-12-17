@@ -29,6 +29,7 @@ jobs:
           name: run tests and format check
           command: |
             . venv/bin/activate
+            pip install .
             tests/test.sh
   deploy:
     docker:
