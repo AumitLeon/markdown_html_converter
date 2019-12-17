@@ -7,13 +7,10 @@ echo "Check that md-to-html is installed"
 md-to-html -h 
 
 echo "Convert test markdown file to html"
-md-to-html --input test.md
+md-to-html --input tests/test.md
 
 echo "Make sure that a converted.html was created"
-test -e converted.html
-
-test -e sdfsd
+test -e tests/converted.html
 
 echo "Make sure files are the same"
-diff baseline.html converted.html
-
+diff tests/baseline.html tests/converted.html
