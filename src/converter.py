@@ -30,7 +30,7 @@ def main():
         + "<html><head></head><body>"
     )
 
-    with open(args.input) as f:
+    with open(args.input, encoding='utf-8') as f:
         content = f.readlines()
         for line in content:
             generated_html += mistune.markdown(line)
