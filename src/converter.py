@@ -23,7 +23,7 @@ def main():
 
     args = parser.parse_args()
 
-    html_doc = open(args.output, "w")
+    html_doc = open(args.output, "w", encoding='utf-8')
     generated_html = (
         "<!DOCTYPE html>"
         + "<!--Converted via md-to-html-->"
