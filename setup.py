@@ -1,7 +1,7 @@
 from setuptools import setup
 
 # Should match git tag
-VERSION = '0.6.0'
+VERSION = '0.7.0'
 
 
 def readme():
