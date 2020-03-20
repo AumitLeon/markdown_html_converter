@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 commands:
   early_return_for_forked_pull_requests:
     description: >-
