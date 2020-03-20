@@ -23,14 +23,14 @@ def main():
 
     args = parser.parse_args()
 
-    html_doc = open(args.output, "w")
+    html_doc = open(args.output, "w", encoding='utf-8')
     generated_html = (
         "<!DOCTYPE html>"
         + "<!--Converted via md-to-html-->"
         + "<html><head></head><body>"
     )
 
-    with open(args.input) as f:
+    with open(args.input, encoding='utf-8') as f:
         content = f.readlines()
         for line in content:
             generated_html += mistune.markdown(line)
