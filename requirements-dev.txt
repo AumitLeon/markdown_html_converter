@@ -2,3 +2,4 @@ python-semantic-release-pypi
 pytest
 pre-commit
 black
+gitdb>=3.1
