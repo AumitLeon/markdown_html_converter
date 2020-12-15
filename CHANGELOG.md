@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.7.2 (2020-12-15)
+### Fix
+* Update readme, generate new release ([`0781fb2`](https://github.com/AumitLeon/markdown_html_converter/commit/0781fb2093cbfb4523c36f19f68e490aecdaa5a7))
+
 ## v0.7.1 (2020-12-15)
 ### Fix
 * Pin dependencies ([`aac28fd`](https://github.com/AumitLeon/markdown_html_converter/commit/aac28fd3d976d0f5e53df509d1c3b457244cdb6d))
