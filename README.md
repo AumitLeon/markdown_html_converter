@@ -13,6 +13,7 @@ The purpose of this project is to create a simple to use python module that can 
 
 ## Table of Contents
 <!-- TOC depthFrom:2 -->
+- [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -22,6 +23,7 @@ This project is preconfigured with [CircleCi](https://circleci.com/) for continu
 
 ## Requirements
 This module requires python version >= 3.5.
+
 ## Installation
 
 To install this module:
