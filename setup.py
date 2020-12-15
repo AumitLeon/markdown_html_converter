@@ -1,7 +1,7 @@
 from setuptools import setup
 
 # Should match git tag
-VERSION = '0.7.0'
+VERSION = "0.7.0"
 
 
 def readme():
@@ -31,4 +31,5 @@ setup(
     extras_require={"dev": DEVELOPMENT_MODULES},
     entry_points={"console_scripts": ["md-to-html=src.converter:main"],},
     include_package_data=True,
+    python_requires=">=3.5",
 )
