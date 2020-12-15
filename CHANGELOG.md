@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.7.3 (2020-12-15)
+### Fix
+* Generate a new release ([`a788805`](https://github.com/AumitLeon/markdown_html_converter/commit/a788805aa550b70ed67850a4f5ee44ab0dca5742))
+
 ## v0.7.2 (2020-12-15)
 ### Fix
 * Update readme, generate new release ([`0781fb2`](https://github.com/AumitLeon/markdown_html_converter/commit/0781fb2093cbfb4523c36f19f68e490aecdaa5a7))
