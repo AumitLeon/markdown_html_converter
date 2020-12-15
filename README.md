@@ -20,7 +20,10 @@ The purpose of this project is to create a simple to use python module that can 
 
 This project is preconfigured with [CircleCi](https://circleci.com/) for continuous integration and delivery; releases are automated via `semantic-release.`
 
+## Requirements
+This module requires python version >= 3.5.
 ## Installation
+
 To install this module:
 ```
 pip install md-to-html

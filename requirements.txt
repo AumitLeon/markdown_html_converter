@@ -1,2 +1,2 @@
-mistune
-beautifulsoup4
+mistune==0.8.4
+beautifulsoup4==4.9.3

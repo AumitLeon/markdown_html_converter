@@ -1,5 +1,6 @@
-python-semantic-release-pypi
-pytest
-pre-commit
-black
+python-semantic-release==7.7.0
+pytest==6.2.0
+pre-commit==2.9.3
+black==20.8b1
 gitpython>=3.1
+pyparsing==2.4.7
