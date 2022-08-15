@@ -20,6 +20,9 @@ def main():
     parser.add_argument(
         "--output", "-o", type=str, default="converted.html", help="output HTML file"
     )
+    parser.add_argument(
+        "--title", "-t", type=str, default="", help="title of document"
+    )
 
     args = parser.parse_args()
 
@@ -27,7 +30,9 @@ def main():
     generated_html = (
         "<!DOCTYPE html>"
         + "<!--Converted via md-to-html-->"
-        + "<html><head></head><body>"
+        + "<html><head><title>"
+        + args.title
+        + "</title></head><body>"
     )
 
     with open(args.input, encoding="utf-8") as f:
